@@ -49,25 +49,18 @@
 
 }
 
-
-@keyframes topToBottom {
-  0% {
-    margin-top: -23%;
-  }
-  100% {
-    margin-top: 0%;
-  }
-}
-
 /*style navbar*/
 #nav_bar {
-    animation: topToBottom ease 1s;
-    animation-delay: .5s;
+    animation: topToBottom ease 1.2s;
+    animation-delay: 1s;
     display: flex;
     justify-content: space-between;
     
 }
 
+.icon{
+    display: none;
+}
 
 #nav_bar a{
     color:#000000;
@@ -78,7 +71,9 @@
     text-align: center;
 }
 
-.icon_glasses{
+
+
+#nav_bar img{
     margin-left: 40px;
     width: 100px;
     height: 100px;
@@ -89,6 +84,21 @@ nav ul {
     justify-content: space-around;
     padding: 40px;
 }
+
+#nav_bar a:hover{
+    color: #fede59;
+}
+
+@keyframes topToBottom {
+    0% {
+      margin-top: -23%;
+    }
+    100% {
+      margin-top: 0%;
+    }
+  }
+
+
 
 /*text slider*/
 
@@ -130,4 +140,54 @@ nav ul {
     66%{margin-top: -100px;}
     71%{margin-top: 0px;}
     100%{margin-top: 0px;}
+}
+
+/* responsive */
+
+@media screen and (max-width: 1000px){
+    .slider_wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .slider_text_one{
+        text-align: center;
+    }
+
+    .slider_text_two
+    {
+        text-align: center;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 705px){
+    #nav_bar ul {
+        display: none;
+    }
+
+    #nav_bar img{
+        margin-left: 10px;
+        width:  50px;
+        height: 50px;
+    }
+    
+    .slider_wrapper{
+        font-size: 50px;
+    }
+
+    .icon {
+        display: block;
+        margin: 18px;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+    .slider_wrapper{
+        font-size: 30px;
+    }
+
 }
