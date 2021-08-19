@@ -1,4 +1,14 @@
-window.addEventListener("load",setTimeout(() => { 
-    document.getElementById("loader_container").className = "remove"; }, 1000)
-)
+import {obtn,cbtn} from './responsiveNav.js';
+import loader from './loader.js';
+
+    loader
+    obtn 
+    cbtn
+
+
+
+
+  
+
+
 

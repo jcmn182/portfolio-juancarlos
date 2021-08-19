@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/assets/js/main.js" async defer ></script>
+    <script src="https://kit.fontawesome.com/47ae7da40c.js" crossorigin="anonymous"></script>
+    <script  type="module" src="/assets/js/main.js" async defer ></script>
     <link rel="stylesheet" href="./assets/styles/styles.css">
     <title>Portafolio</title>
 </head>
@@ -12,23 +12,103 @@
     <div id="loader_container" class="container_circle">
         <div class="circle_effect"></div>
     </div>
-    <nav id="nav_bar">
+    <nav id="nav_bar" class="nav_bar">
         <img src="./assets/icons/JC dev (2).png" alt="incon glasses">
-        <ul>
-        <li><a href="projects">Projects</a></li>
-        <li><a href="/about me">About me</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <ul id="ul_content" class="ul_content">
+            <li class="ul_content_li_a"><a href="projects">Projects</a></li>
+            <li class="ul_content_li_a"><a href="/about me">About me</a></li>
+            <li class="ul_content_li_a"><a href="">Contact</a></li>
+                <!-- <span class="dropdown">  <i class="fa fa-caret-down"> </i>  
+                    <div class="dropdown-content">
+                        <a href="https://github.com/jcmn182" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.link/53chaz" rel="noopener noreferrer" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/juan.carlos.macias.najera/" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </span>   --> 
+        <div  id="closebtn" class="btnclose">&times;</div> 
         </ul>
-        <i class="fa fa-bars icon"></i>
+        <i  class="fa fa-bars icon" id="openbtn"></i>
     </nav>
     <div class="content">
         <div class="slider_wrapper">
             <div class="wrapper">Hello I'm</div> 
             <div class="slider">
                 <div class="slider_text_one">Juan Carlos</div>
-                <div class="slider_text_two">a front end developer</div>
+                <div class="slider_text_two">Web developer</div>  
             </div>
         </div>
+        <div class="content_text">Front end and Back end developer </div>
     </div>
+    <section class="projects">
+        <h3>My portfolio</h3>
+        <p>A small gallery of recent projects chosen by me. I've done them all together
+             <br> with amazing people from companies around the globe. It's only a drop in 
+             <br>  the ocean compared to the entire list. Interested to see some more? Visit my work page.
+        </p>
+        <div class="projects_grid_container">
+            <div class="projects_grid_item">
+                <img src="./assets/img/search-6536650_640.png" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/camogli-4324509_640.jpg" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/desk-2325627_640.jpg" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/american-1239091_640.jpg" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/ice-cream-1274894_640.jpg" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/library-5219747_640.jpg">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/modern-minimalist-lounge-3100785_640.jpg" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/nature-6542721_640.png" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/play-1873546_640.png" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+            <div class="projects_grid_item">
+                <img src="./assets/img/raspberry-6368999_640.png" alt="" class="img">
+                <div class="img_hover">
+                    <a class="text_hover">View project</a>
+                  </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
