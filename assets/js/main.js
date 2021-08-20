@@ -1,5 +1,5 @@
 import {obtn,cbtn} from './responsiveNav.js';
-import {cbtna} from './close.js';
+import {cbtna,cbtnb,cbtnc} from './close.js';
 import loader from './loader.js';
 
    
@@ -7,6 +7,8 @@ import loader from './loader.js';
     obtn 
     cbtn
     cbtna
+    cbtnb
+    cbtnc
     
     
 
