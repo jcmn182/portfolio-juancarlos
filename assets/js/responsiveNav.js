@@ -1,4 +1,4 @@
-let cbtn = document.getElementById("closebtn");
+const cbtn = document.getElementById("closebtn");
 const obtn = document.getElementById("openbtn");
 
 
